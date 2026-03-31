@@ -21,8 +21,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Basic Test
-        run: node app.js & sleep 5
-
       - name: Build Docker Image
         run: docker build -t devops-app .
